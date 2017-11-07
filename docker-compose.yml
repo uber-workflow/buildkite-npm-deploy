@@ -4,6 +4,6 @@ services:
     build: .
     environment:
       - NPM_TOKEN
-      - BUILDKITE_REPO
+      - PUBLISH_REPO
     volumes:
       - .:/app
