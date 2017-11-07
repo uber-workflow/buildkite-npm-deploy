@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    build: .
+    environment:
+      - NPM_TOKEN
+      - BUILDKITE_REPO
+    volumes:
+      - .:/app
