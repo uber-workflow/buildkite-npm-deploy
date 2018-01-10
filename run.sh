@@ -7,13 +7,6 @@ fi
 
 TARGET_COMMITISH=${TARGET_COMMITISH:-master}
 
-# Revert to master if we find a SHA.
-# Branch deploys will have a TARGET_COMMITISH of the branch name.
-if [[ $TARGET_COMMITISH =~ [a-f0-9]{32} ]]; then
-  echo "SHA found, using master as deploy target"
-	TARGET_COMMITISH="master"
-fi
-
 echo "Begin deploy."
 
 rm -rf deploy_repo || true
