@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 if [ -z $PUBLISH_REPO ]; then
 	echo "PUBLISH_REPO is not set. Exiting"
 	exit 0
