@@ -3,6 +3,7 @@ services:
   app:
     build: .
     environment:
+      - CI
       - NPM_TOKEN
       - PUBLISH_REPO
     volumes:

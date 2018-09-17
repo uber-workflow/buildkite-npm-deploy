@@ -3,4 +3,4 @@
 echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 cd deploy_repo && \
 	yarn && \
-	npm-publish-prerelease
+	npm-publish-prerelease --unsafe-perm
