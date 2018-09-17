@@ -6,5 +6,6 @@ services:
       - CI
       - NPM_TOKEN
       - PUBLISH_REPO
+      - PUBLISH_ARGS
     volumes:
       - .:/app
