@@ -1,4 +1,4 @@
-FROM uber/web-base-image:2.0.2
+FROM uber/web-base-image:14.16.0
 
 WORKDIR /app
 
